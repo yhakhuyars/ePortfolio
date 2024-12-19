@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #efffed; /* Light blue background */
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #005f99; /* Complementary deep blue */
+    color: white;
+    padding: 20px 0; /* Bigger nav bar */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Increased spacing between nav items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px; /* Larger font size */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #cce7ff; /* Light blue hover effect */
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* About Section */
+#about {
+    background-color: #004f7c; /* Same color as the navigation bar */
+    color: #fff; /* White text for contrast */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for the box */
+    text-align: center;
+    margin-top: 20px;
+    max-width: 800px; /* Optional: Limits the width of the box */
+    margin: 20px auto; /* Centers the section horizontally */
+}
+
+#github-profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image doesn't distort */
+    margin-bottom: 15px;
+    border: 3px solid #fff; /* White border around the image */
+}
+
+
+/* Projects Section */
+#projects {
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Ensures square images */
+    object-fit: cover; /* Ensures the image doesn't stretch */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.1); /* Enlarge image on hover */
+}
+
+.project a {
+    text-decoration: none;
+    color: #333;
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Apply CSS Grid for the project layout */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Makes the grid responsive */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Centers the items in the grid */
+}
+
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #005f99; /* Matches nav bar color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #003f66; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #projects {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}

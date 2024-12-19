@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ePortfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>ABOUT ME</h2>
+        <img id="github-profile-pic" src="https://avatars.githubusercontent.com/u/155465860?v=4" alt="Profile Picture">
+        <p>I am a 3rd Year Computer Science Student interested in learning more about game development.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="project">
+            <a href="https://github.com/yhakhuyars/SoftEngProject" target="_blank">
+                <img src="https://raw.githubusercontent.com/yhakhuyars/SoftEngProject/refs/heads/main/game/gui/window_icon.png" alt="Project 1 Screenshot">
+                <h3>Renpy Game Development</h3>
+            </a>
+        </div>
+        <div class="project">
+            <a href="https://github.com/yhakhuyars/adet-CRUD-PIT" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6KhqQuoRCoWF35JboxUemJMvbqk4Y7dq4Nde50N8YBjEy9W4WgV0j_vcAsC_8tMU0Z6o&usqp=CAU" alt="Project 2 Screenshot">
+                <h3>Flask Project</h3>
+            </a>
+        </div>
+        <div class="project">
+            <a href="https://github.com/Chxrls/Email-Weather" target="_blank">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-ios-weather-icon-download-in-svg-png-gif-file-formats--11-pack-user-interface-icons-461610.png?f=webp&w=256" alt="Project 3 Screenshot">
+                <h3>IMAP-SMTP Email weather app</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="https://formspree.io/f/xwpkgkkv" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
